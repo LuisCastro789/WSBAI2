@@ -62,7 +62,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "Server configuration error." });
   }
 
-  const model = "gemini-2.5-flash-preview-04-17";
+  const model = "gemini-2.5-flash";
   const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
 
   const geminiPayload = {
